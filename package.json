@@ -1,0 +1,14 @@
+{
+  "name": "wakagist",
+  "version": "0.0.1",
+  "description": "✏️ WakaTime -> Gist",
+  "main": "index.js",
+  "repository": "git@github.com:jeepies/wakagist.git",
+  "author": "Jay Davis <jay@jeepies.codes>",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "dotenv": "^16.4.5",
+    "wakaclient": "^1.0.0"
+  }
+}

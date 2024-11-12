@@ -1,0 +1,19 @@
+name: Update Gist
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Packages & Update Gist
+        env:
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          WAKATIME_KEY: ${{ secrets.WAKATIME_KEY }}
+        run: npm ci && node index.js
