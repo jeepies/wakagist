@@ -1,6 +1,9 @@
-# WakaGist
+<h1 style="text-align: center;">WakaGist</h1>
 
-<!-- TODO: Add preview of Gist -->
+<p align="center">
+  <img width="400" src="https://raw.githubusercontent.com/jeepies/wakagist/refs/heads/main/preview.png">
+  <p align="center">Update a pinned gist to contain an overview of your WakTime stats</p>
+</p>
 
 ## Setup
 
