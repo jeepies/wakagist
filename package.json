@@ -10,5 +10,6 @@
     "@octokit/rest": "^21.0.2",
     "dotenv": "^16.4.5",
     "wakaclient": "^1.0.0"
-  }
+  },
+  "type": "module"
 }
