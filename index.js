@@ -30,7 +30,7 @@ async function job() {
   const LINES = [
     `Total Time Coding: ${human_readable_total}`,
     `Most Used Language: ${topLanguage.name} (${topLanguage.text})`,
-    `Most Used IDE: ${topEditor.name} (${topLanguage.text})`,
+    `Most Used IDE: ${topEditor.name} (${topEditor.text})`,
     `Most Used OS: ${topOperatingSystem.name} (${topOperatingSystem.text})`,
     `Gathering ${human_readable_range}`,
   ];
