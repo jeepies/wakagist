@@ -1,0 +1,8 @@
+name: "wakagist"
+description: "✏️ WakaTime -> Gist "
+branding:
+  icon: "heart"
+  color: "purple"
+runs:
+  using: "node20"
+  main: "dist/index.js"
