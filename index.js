@@ -15,7 +15,7 @@ const removeUnknown = (arr) => arr.filter((item) => item.name !== "Other");
 async function job() {
   const {
     data: {
-      human_readable_total,
+      human_readable_total_including_other_language,
       languages,
       editors,
       operating_systems,
@@ -28,7 +28,7 @@ async function job() {
   const topOperatingSystem = removeUnknown(operating_systems)[0];
 
   const LINES = [
-    `Total Time Coding: ${human_readable_total}`,
+    `Total Time Coding: ${human_readable_total_including_other_language}`,
     `Most Used Language: ${topLanguage.name} (${topLanguage.text})`,
     `Most Used IDE: ${topEditor.name} (${topEditor.text})`,
     `Most Used OS: ${topOperatingSystem.name} (${topOperatingSystem.text})`,
